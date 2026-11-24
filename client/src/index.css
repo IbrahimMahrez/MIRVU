@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ===== Custom CSS (plain CSS - no @tailwind directives needed, Tailwind comes from CDN) ===== */
+
+/* Status dots */
+.status-dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.status-dot::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  opacity: 0.75;
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.status-live { background-color: #00D6A0; }
+.status-live::before { background-color: #00D6A0; }
+.status-idle { background-color: #58677E; }
+.status-processing { background-color: #FFB547; animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+.status-processing::before { background-color: #FFB547; }
+
+/* Video Panel */
+.video-panel {
+  background-color: #0F172A;
+  border: 1px solid #14243A;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.recording-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background-color: #EF4444;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid rgba(239, 68, 68, 0.5);
+}
+.recording-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #EF4444;
+  animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.camera-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+  padding: 0 24px;
+}
+.camera-btn {
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+}
+.camera-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.camera-btn-danger {
+  background-color: #FF465C;
+  border-color: rgba(255, 70, 92, 0.3);
+}
+.camera-btn-danger:hover {
+  background-color: rgba(255, 70, 92, 0.8);
+}
+.user-preview {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 96px;
+  height: 72px;
+  background-color: #000000;
+  border: 1px solid #14243A;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.user-preview video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #58677E;
+}
+
+/* Question Card */
+.question-card {
+  background-color: #0B1322;
+  border: 1px solid #14243A;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.question-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid #14243A;
+}
+.question-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #080F1D;
+  border: 1px solid #14243A;
+  color: #8B9AB2;
+}
+.answer-input {
+  width: 100%;
+  min-height: 120px;
+  background-color: #080F1D;
+  border: 1px solid #14243A;
+  border-radius: 8px;
+  padding: 12px;
+  color: #F1F5FC;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  resize: none;
+  outline: none;
+}
+.answer-input:focus {
+  outline: none;
+  border-color: #0877FF;
+  box-shadow: 0 0 0 2px rgba(8, 124, 255, 0.5);
+}
+.finish-answer-btn {
+  padding: 10px 24px;
+  background-color: #087CFF;
+  color: #FFFFFF;
+  border-radius: 6px;
+  font-weight: 500;
+  box-shadow: 0 0 10px rgba(8, 124, 255, 0.3);
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.finish-answer-btn:hover {
+  background-color: rgba(8, 124, 255, 0.9);
+}
+.finish-answer-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* AI Tip */
+.ai-tip {
+  display: flex;
+  gap: 12px;
+  padding: 16px 24px;
+  background-color: #080F1D;
+  border: 1px solid #14243A;
+  border-radius: 8px;
+}
+.ai-tip-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(8, 124, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #087CFF;
+  font-size: 0.75rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+/* Top bar buttons */
+.end-interview-btn {
+  padding: 8px 16px;
+  background-color: rgba(255, 70, 92, 0.1);
+  border: 1px solid rgba(255, 70, 92, 0.3);
+  color: #FF465C;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.2s;
+  cursor: pointer;
+  outline: none;
+}
+.end-interview-btn:hover {
+  background-color: rgba(255, 70, 92, 0.2);
+}
+.no-btn {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 1px solid rgba(139, 154, 178, 0.2);
+  color: #8B9AB2;
+  font-size: 0.875rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+  cursor: pointer;
+  outline: none;
+}
+.no-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Speaking waveform */
+.speaking-waveform {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 16px;
+}
+.speaking-bar {
+  flex: 1;
+  max-width: 2px;
+  background-color: #087CFF;
+  border-radius: 2px;
+  transform-origin: bottom;
+  animation: wave 1.2s ease-in-out infinite;
+}
+.speaking-bar:nth-child(1) { animation-delay: 0ms; height: 75%; }
+.speaking-bar:nth-child(2) { animation-delay: 100ms; height: 50%; }
+.speaking-bar:nth-child(3) { animation-delay: 200ms; height: 83%; }
+.speaking-bar:nth-child(4) { animation-delay: 300ms; height: 33%; }
+.speaking-bar:nth-child(5) { animation-delay: 400ms; height: 67%; }
+.speaking-bar:nth-child(6) { animation-delay: 500ms; height: 80%; }
+.speaking-bar:nth-child(7) { animation-delay: 600ms; height: 50%; }
+.speaking-bar:nth-child(8) { animation-delay: 700ms; height: 60%; }
+
+@keyframes wave {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "js-001",
+    "role": "MERN Stack Developer",
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "type": "technical",
+    "question": "What is the difference between `let`, `const`, and `var` in JavaScript? When would you use each?",
+    "expectedConcepts": ["block scope", "function scope", "hoisting", "reassignment", "temporal dead zone"],
+    "source": "dataset"
+  },
+  {
+    "id": "js-002",
+    "role": "MERN Stack Developer",
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "Explain how JavaScript's event loop works. What are the call stack, callback queue, and microtask queue?",
+    "expectedConcepts": ["call stack", "callback queue", "microtask queue", "event loop", "async/await", "promises", "setTimeout"],
+    "source": "dataset"
+  },
+  {
+    "id": "js-003",
+    "role": "MERN Stack Developer",
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "What are closures in JavaScript? Give a practical example of when you would use one.",
+    "expectedConcepts": ["lexical scoping", "closure", "data privacy", "factory functions", "module pattern"],
+    "source": "dataset"
+  },
+  {
+    "id": "js-004",
+    "role": "MERN Stack Developer",
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "Explain the difference between `==` and `===` in JavaScript. What is type coercion?",
+    "expectedConcepts": ["strict equality", "loose equality", "type coercion", "type conversion", "falsy values"],
+    "source": "dataset"
+  },
+  {
+    "id": "js-005",
+    "role": "MERN Stack Developer",
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "type": "technical",
+    "question": "How does `this` binding work in JavaScript? Explain the four binding rules: default, implicit, explicit, and new binding.",
+    "expectedConcepts": ["this keyword", "default binding", "implicit binding", "explicit binding", "call/apply/bind", "new binding", "arrow functions"],
+    "source": "dataset"
+  },
+  {
+    "id": "html-css-001",
+    "role": "MERN Stack Developer",
+    "category": "HTML/CSS",
+    "difficulty": "easy",
+    "type": "technical",
+    "question": "What is the box model in CSS? How do `box-sizing: border-box` and `box-sizing: content-box` differ?",
+    "expectedConcepts": ["box model", "content-box", "border-box", "padding", "border", "margin", "width calculation"],
+    "source": "dataset"
+  },
+  {
+    "id": "html-css-002",
+    "role": "MERN Stack Developer",
+    "category": "HTML/CSS",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "Explain CSS Flexbox and Grid. When would you use each layout method?",
+    "expectedConcepts": ["flexbox", "grid", "one-dimensional", "two-dimensional", "align-items", "justify-content", "grid-template-columns"],
+    "source": "dataset"
+  },
+  {
+    "id": "html-css-003",
+    "role": "MERN Stack Developer",
+    "category": "HTML/CSS",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "What are semantic HTML elements? Why are they important for accessibility and SEO?",
+    "expectedConcepts": ["semantic HTML", "accessibility", "screen readers", "SEO", "header", "nav", "main", "article", "section", "footer"],
+    "source": "dataset"
+  },
+  {
+    "id": "react-001",
+    "role": "MERN Stack Developer",
+    "category": "React",
+    "difficulty": "easy",
+    "type": "technical",
+    "question": "What is the difference between a functional component and a class component in React? Which is preferred now and why?",
+    "expectedConcepts": ["functional components", "class components", "hooks", "useState", "useEffect", "lifecycle methods", "simpler syntax"],
+    "source": "dataset"
+  },
+  {
+    "id": "react-002",
+    "role": "MERN Stack Developer",
+    "category": "React",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "Explain React's useEffect hook. What are the different dependency array patterns and what do they mean?",
+    "expectedConcepts": ["useEffect", "dependency array", "cleanup function", "mount", "update", "unmount", "empty array", "no array", "specific dependencies"],
+    "source": "dataset"
+  },
+  {
+    "id": "react-003",
+    "role": "MERN Stack Developer",
+    "category": "React",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "What is the purpose of React's useState and useReducer hooks? When would you choose one over the other?",
+    "expectedConcepts": ["useState", "useReducer", "state management", "complex state", "state transitions", "dispatch", "reducer function"],
+    "source": "dataset"
+  },
+  {
+    "id": "react-004",
+    "role": "MERN Stack Developer",
+    "category": "React",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "How does React's virtual DOM work? What is reconciliation and how does the diffing algorithm work?",
+    "expectedConcepts": ["virtual DOM", "reconciliation", "diffing algorithm", "key prop", "fiber", "re-rendering", "performance"],
+    "source": "dataset"
+  },
+  {
+    "id": "react-005",
+    "role": "MERN Stack Developer",
+    "category": "React",
+    "difficulty": "hard",
+    "type": "technical",
+    "question": "What are React Server Components? How do they differ from client components and what problems do they solve?",
+    "expectedConcepts": ["React Server Components", "RSC", "client components", "server components", "streaming", "bundle size", "data fetching"],
+    "source": "dataset"
+  },
+  {
+    "id": "node-001",
+    "role": "MERN Stack Developer",
+    "category": "Node.js",
+    "difficulty": "easy",
+    "type": "technical",
+    "question": "What is Node.js? How does its non-blocking, event-driven architecture work?",
+    "expectedConcepts": ["Node.js", "event loop", "non-blocking I/O", "single-threaded", "libuv", "event-driven", "asynchronous"],
+    "source": "dataset"
+  },
+  {
+    "id": "node-002",
+    "role": "MERN Stack Developer",
+    "category": "Node.js",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "Explain the difference between `process.nextTick()`, `setImmediate()`, and `setTimeout()`. When does each execute?",
+    "expectedConcepts": ["process.nextTick", "setImmediate", "setTimeout", "event loop phases", "microtask", "macrotask", "execution order"],
+    "source": "dataset"
+  },
+  {
+    "id": "express-001",
+    "role": "MERN Stack Developer",
+    "category": "Express.js",
+    "difficulty": "easy",
+    "type": "technical",
+    "question": "What is middleware in Express.js? Explain the difference between application-level, router-level, and error-handling middleware.",
+    "expectedConcepts": ["middleware", "req", "res", "next", "application-level", "router-level", "error-handling", "four parameters"],
+    "source": "dataset"
+  },
+  {
+    "id": "express-002",
+    "role": "MERN Stack Developer",
+    "category": "Express.js",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "How would you implement authentication and authorization in an Express.js API? Explain JWT-based authentication flow.",
+    "expectedConcepts": ["JWT", "authentication", "authorization", "access token", "refresh token", "middleware", "protected routes", "password hashing"],
+    "source": "dataset"
+  },
+  {
+    "id": "express-003",
+    "role": "MERN Stack Developer",
+    "category": "Express.js",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "What is the purpose of `helmet`, `cors`, and `rate-limiter` middleware in Express? Why are they important for production?",
+    "expectedConcepts": ["helmet", "cors", "rate limiting", "security headers", "cross-origin", "DDoS protection", "production security"],
+    "source": "dataset"
+  },
+  {
+    "id": "mongodb-001",
+    "role": "MERN Stack Developer",
+    "category": "MongoDB",
+    "difficulty": "easy",
+    "type": "technical",
+    "question": "What is MongoDB? How does it differ from relational databases like PostgreSQL or MySQL?",
+    "expectedConcepts": ["NoSQL", "document database", "BSON", "collections", "documents", "schema-less", "horizontal scaling", "ACID vs BASE"],
+    "source": "dataset"
+  },
+  {
+    "id": "mongodb-002",
+    "role": "MERN Stack Developer",
+    "category": "MongoDB",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "Explain Mongoose schemas and models. What are virtuals, middleware, and indexes in Mongoose?",
+    "expectedConcepts": ["Mongoose", "schema", "model", "virtuals", "middleware", "pre/post hooks", "indexes", "validation", "population"],
+    "source": "dataset"
+  },
+  {
+    "id": "mongodb-003",
+    "role": "MERN Stack Developer",
+    "category": "MongoDB",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "What is the aggregation pipeline in MongoDB? Give an example of when you would use `$lookup`, `$group`, and `$project`.",
+    "expectedConcepts": ["aggregation pipeline", "$lookup", "$group", "$project", "$match", "$sort", "pipeline stages", "joins"],
+    "source": "dataset"
+  },
+  {
+    "id": "api-001",
+    "role": "MERN Stack Developer",
+    "category": "REST APIs",
+    "difficulty": "easy",
+    "type": "technical",
+    "question": "What are the main HTTP methods used in REST APIs? Explain the purpose of GET, POST, PUT, PATCH, and DELETE.",
+    "expectedConcepts": ["HTTP methods", "GET", "POST", "PUT", "PATCH", "DELETE", "idempotency", "safe methods", "CRUD"],
+    "source": "dataset"
+  },
+  {
+    "id": "api-002",
+    "role": "MERN Stack Developer",
+    "category": "REST APIs",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "What are HTTP status codes? Explain the difference between 2xx, 3xx, 4xx, and 5xx. Give examples of when to use 400, 401, 403, 404, 409, 422, and 500.",
+    "expectedConcepts": ["status codes", "2xx success", "3xx redirect", "4xx client error", "5xx server error", "specific codes", "semantic meaning"],
+    "source": "dataset"
+  },
+  {
+    "id": "api-003",
+    "role": "MERN Stack Developer",
+    "category": "REST APIs",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "What is API versioning? What are the different strategies (URL, header, query param) and their trade-offs?",
+    "expectedConcepts": ["API versioning", "URL versioning", "header versioning", "query param versioning", "backward compatibility", "deprecation"],
+    "source": "dataset"
+  },
+  {
+    "id": "auth-001",
+    "role": "MERN Stack Developer",
+    "category": "Authentication/Authorization",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "Explain the difference between authentication and authorization. What is OAuth 2.0 and how does the Authorization Code flow work?",
+    "expectedConcepts": ["authentication", "authorization", "OAuth 2.0", "Authorization Code flow", "access token", "refresh token", "scope", "PKCE"],
+    "source": "dataset"
+  },
+  {
+    "id": "auth-002",
+    "role": "MERN Stack Developer",
+    "category": "Authentication/Authorization",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "What are the security best practices for storing passwords? Explain bcrypt, salt, and why you should never store plain text passwords.",
+    "expectedConcepts": ["password hashing", "bcrypt", "salt", "rainbow tables", "work factor", "timing attacks", "plain text passwords"],
+    "source": "dataset"
+  },
+  {
+    "id": "eng-001",
+    "role": "MERN Stack Developer",
+    "category": "Software Engineering Fundamentals",
+    "difficulty": "easy",
+    "type": "technical",
+    "question": "What is version control? Explain the basic Git workflow: clone, branch, commit, push, pull request, merge.",
+    "expectedConcepts": ["Git", "version control", "branch", "commit", "push", "pull request", "merge", "conflict resolution", "remote"],
+    "source": "dataset"
+  },
+  {
+    "id": "eng-002",
+    "role": "MERN Stack Developer",
+    "category": "Software Engineering Fundamentals",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "What are the SOLID principles? Explain each principle with a practical example.",
+    "expectedConcepts": ["SOLID", "Single Responsibility", "Open/Closed", "Liskov Substitution", "Interface Segregation", "Dependency Inversion"],
+    "source": "dataset"
+  },
+  {
+    "id": "eng-003",
+    "role": "MERN Stack Developer",
+    "category": "Software Engineering Fundamentals",
+    "difficulty": "medium",
+    "type": "technical",
+    "question": "Explain the difference between unit tests, integration tests, and end-to-end tests. What is the testing pyramid?",
+    "expectedConcepts": ["unit tests", "integration tests", "e2e tests", "testing pyramid", "Jest", "React Testing Library", "Cypress", "test coverage"],
+    "source": "dataset"
+  },
+  {
+    "id": "eng-004",
+    "role": "MERN Stack Developer",
+    "category": "Software Engineering Fundamentals",
+    "difficulty": "hard",
+    "type": "technical",
+    "question": "What is CI/CD? Explain a typical CI/CD pipeline for a MERN stack application including build, test, and deploy stages.",
+    "expectedConcepts": ["CI/CD", "continuous integration", "continuous deployment", "pipeline", "build", "test", "deploy", "GitHub Actions", "Docker", "environment variables"],
+    "source": "dataset"
+  }
+]
